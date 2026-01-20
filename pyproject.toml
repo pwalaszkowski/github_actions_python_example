@@ -1,0 +1,8 @@
+[tool.ruff]
+line-length = 88
+select = ["E", "F"]   # basic errors + flakes
+ignore = ["E501"]    # ignore line length for now
+
+[tool.pytest.ini_options]
+addopts = "--cov=app --cov-report=term-missing --cov-fail-under=80"
+testpaths = ["tests"]
